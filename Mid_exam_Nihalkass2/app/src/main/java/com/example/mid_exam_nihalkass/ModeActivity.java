@@ -57,7 +57,6 @@ public class ModeActivity extends AppCompatActivity {
             popup.show();
         });
 
-        // Back: tab 2/3 -> tab 1, tab 1 -> MainActivity
         getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
@@ -70,7 +69,6 @@ public class ModeActivity extends AppCompatActivity {
         });
     }
 
-    // Up arrow (Ancestral navigation) -> parent activity from the Manifest
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
